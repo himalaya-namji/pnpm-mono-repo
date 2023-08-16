@@ -1,5 +1,5 @@
 {
-  "name": "web",
+  "name": "@pnpm-test/web",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,6 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@pnpm-test/core": "workspace:^",
     "@types/node": "20.5.0",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
@@ -17,8 +22,6 @@
     "eslint-config-next": "13.4.16",
     "next": "13.4.16",
     "postcss": "8.4.28",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
     "tailwindcss": "3.3.3",
     "typescript": "^5.0.2"
   }
