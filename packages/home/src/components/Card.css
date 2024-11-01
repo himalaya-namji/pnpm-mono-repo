@@ -1,0 +1,26 @@
+.card_main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 150px;
+  height: 150px;
+  border: 1px solid seagreen;
+
+  .card_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+
+    .bookmark {
+      width: 10px;
+      height: 10px;
+      background-color: #fff;
+      border: 1px solid #000;
+
+      &.bookmarked {
+        background-color: red;
+      }
+    }
+  }
+}
