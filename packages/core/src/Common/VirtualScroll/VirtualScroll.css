@@ -1,0 +1,7 @@
+/* styles.css */
+.virtualizedContainer {
+  height: 400px;
+  width: 300px;
+  overflow: auto;
+  border: 1px solid black;
+}

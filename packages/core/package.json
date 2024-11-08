@@ -1,5 +1,5 @@
 {
-  "name": "@pnpm-test/core",
+  "name": "@jh-lab/core",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,6 +11,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tanstack/react-virtual": "^3.10.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

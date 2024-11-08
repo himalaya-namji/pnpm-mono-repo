@@ -4,7 +4,9 @@
   "description": "",
   "packageManager": "pnpm@8.5.1",
   "scripts": {
-    "login": "pnpm -F login",
+    "core": "pnpm -F @jh-lab/core",
+    "home": "pnpm -F @jh-lab/home",
+    "login": "pnpm -F @jh-lab/login",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

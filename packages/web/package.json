@@ -1,5 +1,5 @@
 {
-  "name": "@pnpm-test/web",
+  "name": "@jh-lab/web",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -13,7 +13,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@pnpm-test/core": "workspace:^",
+    "@jh-lab/core": "workspace:^",
     "@types/node": "20.5.0",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
