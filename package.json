@@ -5,11 +5,18 @@
   "packageManager": "pnpm@8.5.1",
   "scripts": {
     "core": "pnpm -F @jh-lab/core",
+    "ui": "pnpm -F @jh-lab/ui",
     "home": "pnpm -F @jh-lab/home",
     "login": "pnpm -F @jh-lab/login",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.6.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "react-script": "^2.0.5",
+    "react-scripts": "^5.0.1"
+  }
 }

@@ -12,42 +12,44 @@ const VirtualizedList = () => {
   });
 
   return (
-    <div
-      ref={parentRef}
-      style={{
-        height: `400px`,
-        width: `300px`,
-        overflow: "auto",
-        border: "1px solid black",
-      }}
-    >
+    <>
       <div
+        ref={parentRef}
         style={{
-          height: `${rowVirtualizer.getTotalSize()}px`,
-          position: "relative",
+          height: `400px`,
+          width: `300px`,
+          overflow: "auto",
+          border: "1px solid black",
         }}
       >
-        {rowVirtualizer.getVirtualItems().map((virtualRow) => (
-          <div
-            key={virtualRow.index}
-            style={{
-              position: "absolute",
-              top: 0,
-              left: 0,
-              width: "100%",
-              transform: `translateY(${virtualRow.start}px)`,
-              height: `${virtualRow.size}px`, // 각 아이템의 높이 설정
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              borderBottom: "1px solid #ccc",
-            }}
-          >
-            Row {virtualRow.index}
-          </div>
-        ))}
+        <div
+          style={{
+            height: `${rowVirtualizer.getTotalSize()}px`,
+            position: "relative",
+          }}
+        >
+          {rowVirtualizer.getVirtualItems().map((virtualRow) => (
+            <div
+              key={virtualRow.index}
+              style={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                width: "100%",
+                transform: `translateY(${virtualRow.start}px)`,
+                height: `${virtualRow.size}px`, // 각 아이템의 높이 설정
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                borderBottom: "1px solid #ccc",
+              }}
+            >
+              Row {virtualRow.index}
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
